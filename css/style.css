@@ -30,8 +30,95 @@
 }
 
 #contenedor_per #texto_contacto {
-    padding-top: 15px;
+    padding-top: 7px;
     color: white
+}
+
+#tef_contac {
+    display: flex;
+    align-items: center;
+}
+
+#tef_contac img {
+    margin-left: 255px;
+    width: 30px;
+}
+
+#tef_contac p {
+    color: white;
+}
+
+#corre_contac {
+    display: flex;
+    align-items: center;
+}
+
+#corre_contac img {
+    margin-left: 255px;
+    width: 30px;
+}
+
+#corre_contac p {
+    padding-left: 6px;
+    color: white;
+}
+
+#iden_contac {
+    display: flex;
+    align-items: center;
+}
+
+#iden_contac img {
+    margin-left: 255px;
+    width: 30px;
+}
+
+#iden_contac p {
+    padding-left: 6px;
+    color: white;
+}
+
+#ubi_contac {
+    display: flex;
+    align-items: center;
+}
+
+#ubi_contac img {
+    margin-left: 255px;
+    width: 30px;
+}
+
+#ubi_contac p {
+    padding-left: 6px;
+    color: white;
+}
+
+#texto_referencias {
+    padding-top: 7px;
+    text-align: center;
+    color: white
+}
+
+#cont_refer {
+    display: flex;
+    flex-direction: column;
+}
+
+#cont_refer img {
+    width: 30px;
+    margin-left: 320px;
+}
+
+#cont_refer p {
+    padding-left: 200px;
+    color: white;
+    margin-top: 4px;
+}
+
+#link_texto p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
 }
 
 #contenedor_persona h1 {
