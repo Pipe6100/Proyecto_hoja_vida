@@ -6,7 +6,6 @@
 
 .contenedor_principal {
     display: flex;
-    height: 100vh;
 }
 
 #contenedor_1 {
@@ -17,17 +16,171 @@
 #contenedor_2 {
     background: white;
     flex: 1;
-    display: flex;
 }
 
-#contenedor_2 h2 {
-    color: white;
+#contenedor_per {
     text-align: center;
+    padding-top: 30px;
+}
+
+#contenedor_per img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#contenedor_per #texto_contacto {
+    padding-top: 15px;
+    color: white
+}
+
+#contenedor_persona h1 {
+    color: black;
+    padding-left: 20px;
+    margin-top: 25px;
+    font-size: 45px;
 
 }
 
-#contenedor_2 h2 {
+#contenedor_persona h2 {
     color: black;
     text-align: center;
+    padding-right: 190px;
+    margin-top: 15px;
+    font-size: 21px;
+}
 
+#contenedor_persona #text_estu {
+    margin-right: 24px;
+    margin-left: 10px;
+}
+
+#contenedor_sobremi h3 {
+    color: black;
+    text-align: center;
+    padding-right: 535px;
+}
+
+#contenedor_sobremi p {
+    padding-left: 22px;
+    padding-right: 20px;
+}
+
+#contenedor_sobremi #text_sobmi {
+    margin-right: 22px;
+    margin-left: 10px;
+}
+
+#contenedor_experiencia #text_expe {
+    color: black;
+    text-align: center;
+    padding-right: 505px;
+    margin-right: 6px;
+}
+
+#contenedor_experiencia #text_eti_1 {
+    color: black;
+    text-align: center;
+    padding-right: 100px;
+    margin-right: 410px;
+}
+
+#contenedor_experiencia #text_eti_2 {
+    color: black;
+    text-align: center;
+    padding-right: 450px;
+    margin-right: 60px;
+}
+
+#contenedor_educacion #text_eti_3 {
+    color: black;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 10px;
+    margin-right: 15px;
+    margin-left: 2px;
+    font-size: 14px;
+}
+
+#contenedor_experiencia #eti_t {
+    margin-left: 41px;
+}
+
+#contenedor_educacion #text_eti_4 {
+    color: black;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 5px;
+    margin-right: 189px;
+    margin-left: 1px;
+    font-size: 14px;
+}
+
+#contenedor_educacion #text_eti_5 {
+    color: black;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 5px;
+    margin-right: 219px;
+    margin-left: 1px;
+    font-size: 14px;
+}
+
+#contenedor_educacion #text_edu {
+    margin-right: 2px;
+    margin-left: 20px;
+}
+
+#contenedor_educacion #eti_t_1 {
+    margin-left: 41px;
+}
+
+#contenedor_habilidades #hab_1 {
+    display: flex;
+    margin-left: 20px;
+}
+
+#contenedor_habilidades #hab_2 {
+    display: flex;
+    margin-left: 20px;
+}
+
+#contenedor_habilidades #hab_3 {
+    display: flex;
+    margin-left: 20px;
+}
+
+#contenedor_habilidades #p_1 {
+    margin-left: 300px;
+}
+
+#contenedor_habilidades #p_2 {
+    margin-left: 275px;
+}
+
+#contenedor_habilidades #p_3 {
+    margin-left: 240px;
+}
+
+#contenedor_habilidades #text_habi {
+    margin-left: 22px;
+}
+
+#contenedor_idiomas #idio {
+    display: flex;
+    margin-left: 22px;
+}
+
+#contenedor_idiomas #idi {
+    margin-left: 170px;
+}
+
+#contenedor_2 #text_idio {
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+hr {
+    border-top-width: 1px;
+    border-color: #000;
 }
