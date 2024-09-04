@@ -4,10 +4,30 @@
     box-sizing: border-box;
 }
 
+.contenedor_principal {
+    display: flex;
+    height: 100vh;
+}
+
 #contenedor_1 {
     background: black;
+    flex: 1;
 }
 
 #contenedor_2 {
     background: white;
+    flex: 1;
+    display: flex;
+}
+
+#contenedor_2 h2 {
+    color: white;
+    text-align: center;
+
+}
+
+#contenedor_2 h2 {
+    color: black;
+    text-align: center;
+
 }
