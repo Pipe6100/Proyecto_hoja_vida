@@ -4,9 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
 .contenedor_principal {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 #contenedor_1 {
@@ -236,6 +243,7 @@
     font-size: 20px;
     width: 100%;
     padding: 20px;
+    margin-top: 10px;
     background: linear-gradient(to right, #000000, #333333);
     border-radius: 15px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
@@ -251,14 +259,19 @@
 #contenedor_1 hr,
 #contenedor_2 hr {
     border: none;
-    height: 1px;
-    background-color: #fff;
+    height: 2px;
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.5), #fff);
     margin: 20px 0;
     width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s;
 }
 
-#contenedor_2 hr {
-    background-color: #000;
+#contenedor_1 hr:hover,
+#contenedor_2 hr:hover {
+    background: linear-gradient(to right, #444, #000, #444);
+    transform: scaleY(1.1);
 }
 
 #contenedor_persona {
@@ -267,15 +280,41 @@
 }
 
 #contenedor_persona h1 {
-    color: black;
+    color: #333;
     margin-top: 25px;
     font-size: 45px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: #282c34;
+    padding: 15px;
+    border-radius: 10px;
+    transition: color 0.3s, transform 0.3s, background-color 0.3s;
+}
+
+#contenedor_persona h1:hover {
+    color: #ffcc00;
+    transform: translateY(-3px);
+    background-color: #3e444d;
 }
 
 #contenedor_persona h2 {
-    color: black;
+    color: #555;
     margin-top: 15px;
     font-size: 21px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: #282c34;
+    padding: 10px;
+    border-radius: 10px;
+    transition: color 0.3s, transform 0.3s, background-color 0.3s;
+}
+
+#contenedor_persona h2:hover {
+    color: #ffcc00;
+    transform: translateY(-2px);
+    background-color: #3e444d;
 }
 
 #contenedor_sobremi,
@@ -285,6 +324,21 @@
 #contenedor_idiomas {
     width: 100%;
     text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #e6e6e6);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#contenedor_sobremi:hover,
+#contenedor_experiencia:hover,
+#contenedor_educacion:hover,
+#contenedor_habilidades:hover,
+#contenedor_idiomas:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
 #contenedor_sobremi h3,
@@ -292,12 +346,17 @@
 #contenedor_educacion h3,
 #contenedor_habilidades h3,
 #contenedor_idiomas h3 {
-    color: black;
+    color: #333;
     margin: 20px 0 10px;
+    font-size: 26px;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 #contenedor_sobremi p {
     padding: 0 20px;
+    color: #555;
+    font-size: 18px;
 }
 
 #contenedor_experiencia #text_eti_1,
@@ -305,8 +364,9 @@
 #contenedor_educacion #text_eti_3,
 #contenedor_educacion #text_eti_4,
 #contenedor_educacion #text_eti_5 {
-    color: black;
+    color: #555;
     margin: 10px 0;
+    font-size: 18px;
 }
 
 #contenedor_habilidades #hab_1,
@@ -321,6 +381,18 @@
 #contenedor_habilidades #hab_2 p,
 #contenedor_habilidades #hab_3 p {
     margin: 0 10px;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+#contenedor_habilidades #hab_1 p:hover,
+#contenedor_habilidades #hab_2 p:hover,
+#contenedor_habilidades #hab_3 p:hover {
+    background-color: #d4d4d4;
 }
 
 #contenedor_idiomas #idio {
@@ -331,11 +403,22 @@
 
 #contenedor_idiomas #idio p {
     margin: 0 10px;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+#contenedor_idiomas #idio p:hover {
+    background-color: #d4d4d4;
 }
 
 @media (max-width: 768px) {
     .contenedor_principal {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        /* Cambio a una columna en pantallas pequeñas */
     }
 
     #contenedor_1,
