@@ -418,7 +418,6 @@ body {
 @media (max-width: 768px) {
     .contenedor_principal {
         grid-template-columns: 1fr;
-        /* Cambio a una columna en pantallas pequeñas */
     }
 
     #contenedor_1,
