@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 #contenedor_2 {
@@ -25,6 +26,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 #contenedor_per {
@@ -38,35 +40,128 @@
     height: 200px;
     border-radius: 50%;
     max-width: 100%;
+    border: 5px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+#contenedor_per img:hover {
+    transform: scale(1.1);
 }
 
 #contenedor_per #texto_contacto {
-    padding-top: 7px;
+    padding: 20px;
     color: white;
+    background: linear-gradient(to right, #4a4a4a, #1a1a1a);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px 0;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    position: relative;
 }
 
-#tef_contac, #corre_contac, #iden_contac, #ubi_contac {
+#contenedor_per #texto_contacto:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to right, #333333, #1a1a1a);
+    color: #ffcc00;
+}
+
+#contenedor_per #texto_contacto::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 100%;
+    background: #ffcc00;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+#contenedor_per #texto_contacto:hover::after {
+    transform: scaleX(1);
+}
+
+#tef_contac,
+#corre_contac,
+#iden_contac,
+#ubi_contac {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-#tef_contac img, #corre_contac img, #iden_contac img, #ubi_contac img {
+#tef_contac img,
+#corre_contac img,
+#iden_contac img,
+#ubi_contac img {
     width: 30px;
     margin-right: 10px;
 }
 
-#tef_contac p, #corre_contac p, #iden_contac p, #ubi_contac p {
+#tef_contac p,
+#corre_contac p,
+#iden_contac p,
+#ubi_contac p {
     color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#tef_contac:hover,
+#corre_contac:hover,
+#iden_contac:hover,
+#ubi_contac:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-5px);
 }
 
 #texto_referencias {
-    padding-top: 7px;
-    text-align: center;
+    padding: 20px;
     color: white;
+    background: linear-gradient(to right, #4a4a4a, #1a1a1a);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px 0;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    position: relative;
+}
+
+#texto_referencias:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to right, #333333, #1a1a1a);
+    color: #ffcc00;
+}
+
+#texto_referencias::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
     width: 100%;
+    background: #ffcc00;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+#texto_referencias:hover::after {
+    transform: scaleX(1);
 }
 
 #cont_refer {
@@ -75,23 +170,95 @@
     align-items: center;
     margin-bottom: 15px;
     width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+#cont_refer:hover {
+    transform: scale(1.02);
 }
 
 #cont_refer img {
-    width: 30px;
-    margin-bottom: 5px;
+    width: 40px;
+    margin-bottom: 10px;
 }
 
 #cont_refer p {
     color: white;
     text-align: center;
+    font-size: 16px;
+    margin: 5px 0;
 }
 
-#link_texto p {
+#texto_sitio_web {
+    padding: 20px 30px;
+    color: white;
+    background: linear-gradient(to right, #4a4a4a, #1a1a1a);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    font-size: 28px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px 0;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    position: relative;
+}
+
+#texto_sitio_web:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to right, #333333, #1a1a1a);
+    color: #ffcc00;
+}
+
+#texto_sitio_web::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 100%;
+    background: #ffcc00;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+#texto_sitio_web:hover::after {
+    transform: scaleX(1);
+}
+
+#link_texto a {
     color: white;
     text-align: center;
     font-size: 20px;
     width: 100%;
+    padding: 20px;
+    background: linear-gradient(to right, #000000, #333333);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#link_texto a:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to right, #333333, #000000);
+}
+
+#contenedor_1 hr,
+#contenedor_2 hr {
+    border: none;
+    height: 1px;
+    background-color: #fff;
+    margin: 20px 0;
+    width: 100%;
+}
+
+#contenedor_2 hr {
+    background-color: #000;
 }
 
 #contenedor_persona {
@@ -111,12 +278,20 @@
     font-size: 21px;
 }
 
-#contenedor_sobremi, #contenedor_experiencia, #contenedor_educacion, #contenedor_habilidades, #contenedor_idiomas {
+#contenedor_sobremi,
+#contenedor_experiencia,
+#contenedor_educacion,
+#contenedor_habilidades,
+#contenedor_idiomas {
     width: 100%;
     text-align: center;
 }
 
-#contenedor_sobremi h3, #contenedor_experiencia h3, #contenedor_educacion h3, #contenedor_habilidades h3, #contenedor_idiomas h3 {
+#contenedor_sobremi h3,
+#contenedor_experiencia h3,
+#contenedor_educacion h3,
+#contenedor_habilidades h3,
+#contenedor_idiomas h3 {
     color: black;
     margin: 20px 0 10px;
 }
@@ -125,19 +300,26 @@
     padding: 0 20px;
 }
 
-#contenedor_experiencia #text_eti_1, #contenedor_experiencia #text_eti_2,
-#contenedor_educacion #text_eti_3, #contenedor_educacion #text_eti_4, #contenedor_educacion #text_eti_5 {
+#contenedor_experiencia #text_eti_1,
+#contenedor_experiencia #text_eti_2,
+#contenedor_educacion #text_eti_3,
+#contenedor_educacion #text_eti_4,
+#contenedor_educacion #text_eti_5 {
     color: black;
     margin: 10px 0;
 }
 
-#contenedor_habilidades #hab_1, #contenedor_habilidades #hab_2, #contenedor_habilidades #hab_3 {
+#contenedor_habilidades #hab_1,
+#contenedor_habilidades #hab_2,
+#contenedor_habilidades #hab_3 {
     display: flex;
     justify-content: center;
     margin: 10px 0;
 }
 
-#contenedor_habilidades #hab_1 p, #contenedor_habilidades #hab_2 p, #contenedor_habilidades #hab_3 p {
+#contenedor_habilidades #hab_1 p,
+#contenedor_habilidades #hab_2 p,
+#contenedor_habilidades #hab_3 p {
     margin: 0 10px;
 }
 
@@ -151,19 +333,13 @@
     margin: 0 10px;
 }
 
-hr {
-    border-top-width: 1px;
-    border-color: #000;
-    margin: 20px 0;
-    width: 80%;
-}
-
 @media (max-width: 768px) {
     .contenedor_principal {
         flex-direction: column;
     }
 
-    #contenedor_1, #contenedor_2 {
+    #contenedor_1,
+    #contenedor_2 {
         width: 100%;
     }
 
@@ -180,12 +356,16 @@ hr {
         font-size: 18px;
     }
 
-    #contenedor_habilidades #hab_1, #contenedor_habilidades #hab_2, #contenedor_habilidades #hab_3,
+    #contenedor_habilidades #hab_1,
+    #contenedor_habilidades #hab_2,
+    #contenedor_habilidades #hab_3,
     #contenedor_idiomas #idio {
         flex-direction: column;
     }
 
-    #contenedor_habilidades #hab_1 p, #contenedor_habilidades #hab_2 p, #contenedor_habilidades #hab_3 p,
+    #contenedor_habilidades #hab_1 p,
+    #contenedor_habilidades #hab_2 p,
+    #contenedor_habilidades #hab_3 p,
     #contenedor_idiomas #idio p {
         margin: 5px 0;
     }
